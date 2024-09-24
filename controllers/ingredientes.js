@@ -21,8 +21,20 @@ const getById = (req, res) => {
     }
 }
 
+const deleteById = (req, res) => {
+    // TODO...
+}
+const updateById = (req, res) => {
+    // TODO...
+}
+const add = (req, res) => {
+    // TODO...
+}
+
 module.exports = {
     getTodos,
-    getById
-    // Faltan las demás...
+    getById,
+    deleteById,
+    updateById,
+    add
 }
