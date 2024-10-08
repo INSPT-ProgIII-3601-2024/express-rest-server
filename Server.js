@@ -19,7 +19,7 @@ class Server {
     }
 
     cargarMiddlewares() {
-        // PENDIENTE...
+        this.app.use( express.json() );
     }
 
     cargarRutas() {
