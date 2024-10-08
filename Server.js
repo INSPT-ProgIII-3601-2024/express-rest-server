@@ -24,6 +24,7 @@ class Server {
 
     cargarRutas() {
         this.app.use("/api/ingredientes", require('./routes/ingredientes'));
+        this.app.use("/api", require('./routes/auth'));
     }
 
     conectarABD() {
