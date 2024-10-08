@@ -28,7 +28,7 @@ const login = async (req, res) => {
         }
         // Generar el JWT
         const token = await generarJWT( userEsperado );
-        
+
         res.json({
             userEsperado,
             token
@@ -53,7 +53,7 @@ const generarJWT = ( user ) => {
         };
 
         jwt.sign( payload, process.env.SECRETORPRIVATEKEY, {
-            expiresIn: 10 // 10 segundos para probar que se venza
+            expiresIn: 30 // 30 segundos para probar que se venza
         }, ( err, token ) => {
             if ( err ) {
                 console.log(err);

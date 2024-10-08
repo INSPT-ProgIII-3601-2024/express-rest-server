@@ -22,7 +22,9 @@ const getById = (req, res) => {
 }
 
 const deleteById = (req, res) => {
-    // TODO...
+    res.status(200).json({
+        msg: "Borrado (?"
+    })
 }
 const updateById = (req, res) => {
     // TODO...
